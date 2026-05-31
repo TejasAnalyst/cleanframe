@@ -1,11 +1,12 @@
-# cleanframe 🪄
+# cleanframe-data 🪄
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![PyPI version](https://img.shields.io/pypi/v/cleanframe-data.svg)](https://pypi.org/project/cleanframe-data/)
 
 **Automated Data Cleaning for Faster Analytics**
 
-`cleanframe` is a lightweight, fast, and intuitive Python library designed to automate dataset diagnostics and cleaning. It helps data analysts, scientists, and beginners clean messy datasets, handle missing values, drop low-quality columns, and cap outliers in just one line of code.
+`cleanframe-data` is a lightweight, fast, and intuitive Python library designed to automate dataset diagnostics and cleaning. It helps data analysts, scientists, and beginners clean messy datasets, handle missing values, drop low-quality columns, and cap outliers in just one line of code.
 
 ---
 
@@ -21,8 +22,7 @@
 
 ## 🛠️ Installation
 
-*(Once published to PyPI, you can install it via pip)*
+You can install the official stable release directly from PyPI:
 
 ```bash
-pip install cleanframe
-
+pip install cleanframe-data
