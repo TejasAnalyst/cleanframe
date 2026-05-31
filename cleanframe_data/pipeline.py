@@ -1,5 +1,5 @@
 import pandas as pd
-from cleanframe.cleaner import DataCleaner
+from cleanframe_data.cleaner import DataCleaner
 
 def auto_clean(df: pd.DataFrame, 
                missing_threshold: float = 0.5,

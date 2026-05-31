@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import cleanframe as cf
+import cleanframe_data as cf
 
 # Create a extreme messy dataset with outliers and high missing column
 raw_data = {
