@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
-import cleanframe as cf  # Importing our library just like a pro!
+import cleanframe as cf
 
-# 1. Create dummy raw dataset
+# Create a extreme messy dataset with outliers and high missing column
 raw_data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'Bob', None],
-    'Age': [25, np.nan, 30, np.nan, 22],
-    'City': ['Mumbai', 'Delhi', None, 'Delhi', 'Pune']
+    'Name': ['Alice', 'Bob', 'Charlie', 'Bob', 'David'],
+    'Age': [25, np.nan, 30, np.nan, 28],
+    'Salary': [50000, 60000, 55000, 60000, 999999], # 999999 is a huge outlier!
+    'Empty_Col': [np.nan, np.nan, np.nan, np.nan, 'Value'] # 80% missing data
 }
 df = pd.DataFrame(raw_data)
 
@@ -14,8 +15,8 @@ print("=== ORIGINAL UNCLEANED DATA ===")
 print(df)
 print("\n" + "="*40 + "\n")
 
-# 2. THE ONE-LINE MAGIC MAGIC 🪄
-cleaned_df = cf.auto_clean(df)
+# Run the advanced one-liner magic
+cleaned_df = cf.auto_clean(df, missing_threshold=0.5, handle_outliers=True)
 
-print("=== CLEANED DATA USING cf.auto_clean(df) ===")
+print("=== ADVANCED CLEANED DATA ===")
 print(cleaned_df)
